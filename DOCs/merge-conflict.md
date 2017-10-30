@@ -3,8 +3,8 @@
 **ใช้เมื่อ** เกิด conflict ในขั้นตอนการ merge ระหว่าง 2 branch เช่น
 
 * [ตอน merge](#ลอง-reproduce-conflict-ตอน-merge)
-* ตอน stash pop หรือ stash apply
-* [ตอน pull หรือ pull --rebase](#ลอง-reproduce-conflict-ตอน-rebase)
+* [ตอน rebase](#ลอง-reproduce-conflict-ตอน-rebase)
+* [ตอน stash pop หรือ stash apply](#ลอง-reproduce-conflict-ตอน-stash-pop)
 
 ### ลอง reproduce conflict ตอน merge
 
@@ -69,6 +69,8 @@ LINE 3
 ### ลอง reproduce conflict ตอน rebase
 
 ```
+$ mkdir /git-conflict
+$ cd /git-conflict
 $ git init
 Initialized empty Git repository in /git-conflict/.git/
 $ echo Line 1 > example.txt
@@ -139,5 +141,45 @@ line 2
 ไม่ว่าจะเลือกอันไหน พอเสร็จแล้ว ให้ git add **ห้าม commit** เสร็จแล้วให้สั่ง ```git rebase --continue``` เพื่อทำการ rebase ต่อให้จบ
 
 ถ้าไม่ต้องการ rebase ต่อแล้ว และต้องการยกเลิก ให้สั่ง ```git rebase --abort```
+
+### ลอง reproduce conflict ตอน stash pop
+
+```
+$ mkdir /git-conflict
+$ cd /git-conflict
+$ git init
+Initialized empty Git repository in /git-conflict/.git/
+$ echo Line 1 > example.txt
+$ git add .
+$ git commit -m "initial"
+[master (root-commit) a113b6f] initial
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.txt
+$ echo Line 2 >> example.txt
+$ git add .
+$ git stash
+Saved working directory and index state WIP on master: a113b6f initial
+$ echo Line 3 >> example.txt
+$ git add .
+$ git commit -m "Add Line 3"
+[master 26d44c4] Add Line 3
+ 1 file changed, 1 insertion(+)
+$ git stash pop
+Auto-merging example.txt
+CONFLICT (content): Merge conflict in example.txt
+```
+
+### เปิดไฟล์ที่เจอ conflict เพื่อแก้ไข merge stash conflict
+
+```
+Line 1
+<<<<<<< Updated upstream
+Line 3
+=======
+Line 2
+>>>>>>> Stashed changes
+```
+
+วิธีแก้ไข conflict ให้ทำเหมือนกับตอน merge คือ ลบส่วนที่ไม่ต้องการออก เสร็จแล้วให้ add และ commit ให้เรียบร้อย หรือถ้ายังไม่ต้องการ commit ก็สามารถทำต่อจากที่ค้างไว้ได้เลย
 
 << [กลับไปหน้าแรก](README.md)
