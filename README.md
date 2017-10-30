@@ -1,3 +1,3 @@
 # Git ตามการใช้งาน
 
-รายละเอียด ดูที่ [DOC.md](DOC.md)
+รายละเอียด ดูที่ [DOCs/README.md](DOCs/README.md)
