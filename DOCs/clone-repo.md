@@ -5,8 +5,8 @@
 เช่น เราต้องการดึง repo ที่มีคนทำไว้อยู่แล้วมาใช้งาน
 
 ```
-$ git clone git@github.com:chonla/git-by-usecase.git
-Cloning into 'git-by-usecase'...
+$ git clone git@github.com:chonla/git-cookbook.git
+Cloning into 'git-cookbook'...
 ...
 $
 ```

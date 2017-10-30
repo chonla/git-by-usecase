@@ -4,8 +4,8 @@
 
 ```
 $ git init
-Initialized empty Git repository in /git-by-usecase/.git/
-$ git remote add origin git@github.com:chonla/git-by-usecase.git
+Initialized empty Git repository in /git-cookbook/.git/
+$ git remote add origin git@github.com:chonla/git-cookbook.git
 $
 ```
 
