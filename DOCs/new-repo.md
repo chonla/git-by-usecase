@@ -9,4 +9,4 @@ $ git remote add origin git@github.com:chonla/git-by-usecase.git
 $
 ```
 
-<< [กลับไปหน้าแรก](../DOC.md)
+<< [กลับไปหน้าแรก](README.md)

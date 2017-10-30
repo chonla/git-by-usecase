@@ -11,4 +11,4 @@ Cloning into 'git-by-usecase'...
 $
 ```
 
-<< [กลับไปหน้าแรก](../DOC.md)
+<< [กลับไปหน้าแรก](README.md)
