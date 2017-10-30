@@ -1,6 +1,8 @@
 ## ใช้ repo เดิม
 
-New joiner joins team and want to have a copy of remote repo in his local.
+**ใช้เมื่อ** ต้องการ clone เอา remote repo มาไว้ที่ local repo
+
+เช่น เราต้องการดึง repo ที่มีคนทำไว้อยู่แล้วมาใช้งาน
 
 ```
 $ git clone git@github.com:chonla/git-by-usecase.git
