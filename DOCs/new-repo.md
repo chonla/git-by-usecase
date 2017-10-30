@@ -1,6 +1,6 @@
 ## เริ่ม repo ใหม่
 
-ใช้เมื่อ ยังไม่มี local repository และต้องการเริ่ม repostiory ใหม่
+**ใช้เมื่อ** ยังไม่มี local repository และต้องการเริ่ม repostiory ใหม่
 
 ```
 $ git init
