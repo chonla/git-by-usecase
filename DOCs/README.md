@@ -2,7 +2,7 @@
 
 ## การใช้งาน
 
-[สร้าง repo ใหม่](./new-repo.md), [ใช้ repo เดิม](./clone-repo.md), [พักสิ่งที่ทำอยู่ไว้ก่อน เดี๋ยวมาทำต่อ](./stash.md), [merge conflict](./merge-conflict.md)
+[สร้าง repo ใหม่](./new-repo.md), [ใช้ repo เดิม](./clone-repo.md), [stash ของไว้ เดี๋ยวมาทำต่อ](./stash.md), [merge conflict](./merge-conflict.md)
 
 ## วิธีอ่าน
 

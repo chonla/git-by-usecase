@@ -47,6 +47,7 @@ $ git merge develop
 Auto-merging example.txt
 CONFLICT (content): Merge conflict in example.txt
 Automatic merge failed; fix conflicts and then commit the result.
+$
 ```
 
 ### เปิดไฟล์ที่เจอ conflict เพื่อแก้ไข merge conflict
@@ -118,6 +119,7 @@ The copy of the patch that failed is found in: .git/rebase-apply/patch
 When you have resolved this problem, run "git rebase --continue".
 If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
+$
 ```
 
 ### เปิดไฟล์ที่เจอ conflict เพื่อแก้ไข merge rebase conflict
@@ -167,6 +169,7 @@ $ git commit -m "Add Line 3"
 $ git stash pop
 Auto-merging example.txt
 CONFLICT (content): Merge conflict in example.txt
+$
 ```
 
 ### เปิดไฟล์ที่เจอ conflict เพื่อแก้ไข merge stash conflict
